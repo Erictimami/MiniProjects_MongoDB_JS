@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+        <title>result</title>
+            <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
+        <link rel="stylesheet" type="text/css" href="/stylesheets/quotes.css"> 
+    </head>
+    <body>
+        <div class="container">
+            <h2>Here are the awesome quotes!</h2>
+            <% for(var i in result){ %>
+                <p class="quotes">"<%= result[i].quote %>"</p>
+                <p class="info">-<%= result[i].name %> at <%= result[i].createdAt %></p>
+            <% } %>
+        </div>
+    </body>
+  </html>

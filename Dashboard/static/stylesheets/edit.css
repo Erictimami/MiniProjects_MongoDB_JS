@@ -1,0 +1,57 @@
+body{
+    margin: auto;
+    width: 100%;
+    padding-left: 0px
+}
+
+.container{
+    border: solid 2px;
+    width: 70%!important;
+    margin: 100px 0px 0px 150px;
+    padding: 10px 0px 0px 25px;
+    border-color: blue;
+    border-radius: 50px;
+}
+form{
+    border: solid 2px;
+    width: 50%!important;
+    margin: 10% 0px 0px 20%;
+    padding: 10px 0px 0px 25px;
+    border-color: blue;
+    border-radius: 50px;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button{
+    float: center;
+
+}
+input{
+    width: 200px;
+}
+#inputEmail3{
+    width: 250px!important;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+#your_name{
+    width: 30%!important;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+h2 span{
+    font-size: bold;
+    color: green;
+}
+
+p{
+    color: red;
+    font-size: 10px;
+}

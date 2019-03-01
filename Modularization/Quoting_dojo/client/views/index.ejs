@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+            <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
+
+       <!-- my own css file link in the last position to be priority-->
+       <link rel="stylesheet" type="text/css" href="/stylesheets/index.css"> 
+      <!-- Put the static files in the static folder inside your app.  
+           Django collects files within all static folders and puts them within a single folder -->    
+    </head>
+    <body>
+        <form action="/quotes" method="POST">
+          <h3>Welcome to Quoting Dojo</h3>
+          <!-- tip to easily see objects printed in full instead of [object Object] -->
+          <% if(messages !== undefined) { %>
+          <!-- based on the structure of your messages, determine how to display them -->
+          <% if(messages.registration) { %>
+              <% for (var x of messages.registration) { %>
+                <% if(x.path == 'name'){ %>
+                  <p><%= x.message %></p>
+               <% } %>
+              <% } %>
+              <% } %>
+            <div class="form-group row">
+              <label for="inputEmail3" class="col col-form-label" id="your_name">Your Name:</label>
+              <div class="col">
+                <input type="text" class="form-control" id="inputEmail3" placeholder="Your name here" name="name"> 
+              </div>
+            </div>
+
+            <label for="inputPassword3" class="col col-form-label">Your quote:</label><br>
+            <% if(messages.registration) { %>
+              <% for (var x of messages.registration) { %>
+                <% if(x.path == 'quote'){ %>
+                  <p><%= x.message %></p>
+                <% } %>
+            <% } %>
+          <% } %>
+          <% } %>
+            <textarea id="textarea" rows="3" name="quote"></textarea>
+            <div class="form-group row">
+              <div class="col ">
+                <button type="submit" class="btn btn-primary">Add my quote!</button>
+              </div>
+              <div class="col ">
+                <a href="/quotes" class="btn btn-primary">Skip to quotes!</a>
+              </div>
+            </div>
+        </form>
+    </body>
+  </html>

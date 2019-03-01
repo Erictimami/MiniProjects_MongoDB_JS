@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+        <title>result</title>
+            <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
+        <link rel="stylesheet" type="text/css" href="/stylesheets/mongooses.css"> 
+       <!-- my own css file link in the last position to be priority-->
+
+      <!-- Put the static files in the static folder inside your app.  
+           Django collects files within all static folders and puts them within a single folder -->    
+    </head>
+    <body>
+        <form>
+            <div class="info">
+                <h2>More Information about <span><%=result[0].name%></span> the <span><%=result[0].type%></span> </h2>
+                <div class="key">
+                    <p>Name: </p>
+                    <p>Age:</p>
+                    <p>Type:</p>
+                    <p>Status:</p>
+                    <p>Created at:</p>
+                    <p>updated at:</p>
+                </div>
+                <div class="argument">
+                    <p><%=result[0].name%></p>
+                    <p><%=result[0].age%></p>
+                    <p><%=result[0].type%></p>
+                    <p><%=result[0].status%></p>
+                    <p><%=result[0].createdAt%></p>
+                    <p><%=result[0].updatedAt%></p>
+                </div>
+            </div>
+            <div class="col">
+                    <a href="/mongooses/edit/<%= result[0]._id %>" class="btn btn-primary">Edit</a>
+                    <a href="/mongooses/destroy/<%= result[0]._id %>" class="btn btn-primary">Delete</a>
+                    <a href="/" class="btn btn-primary">Go Back</a>
+            </div>
+        </form>   
+    </body>
+  </html>

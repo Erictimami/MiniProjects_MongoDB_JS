@@ -1,0 +1,57 @@
+body{
+    margin: auto;
+    width: 100%;
+    padding-left: 0px
+}
+form{
+    width: 70%!important;
+    margin: 40px 0px 20px 250px;
+    padding: 10px 0px 0px 25px;
+    min-height: 70%;
+    border: solid 2px;
+}
+a{
+    margin: auto;
+    float: right;
+    margin-right: 40px;
+    width: 120px;
+    height: 35px;
+    background-color: #3069d9;
+    text-align: center;
+    border-radius:2px;
+    color: white;
+}
+.thanks{
+    background-color: green;
+    border: solid 2px;
+    width: 500px;    
+    margin: 40px 0px 0px 250px;
+}
+p{
+    width: 200px;
+}
+.key{
+    width: 15%;
+    display: inline-block;
+    vertical-align: top;
+    
+}
+.argument{
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+}
+.argument p{
+    width: 75%;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2 span{
+    font-size: bold;
+    color: green;
+}

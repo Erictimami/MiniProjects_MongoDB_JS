@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <meta charset="utf-8">
+        <title>result</title>
+            <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">     
+        <link rel="stylesheet" type="text/css" href="/stylesheets/new.css"> 
+    </head>
+    <body>
+        <div class="container">
+            <h2>Add a new mongoose </h2>
+            <form action="/mongooses" method="POST">
+                <% if(messages !== undefined) { %>
+                <div class="form-group row">
+                        <label for="inputEmail3" class="col col-form-label" id="your_name">Name:</label>
+                        <!-- based on the structure of your messages, determine how to display them -->
+                        <div class="col">
+                                <% if(messages.registration) { %>
+                                    <% for (var x of messages.registration) { %>
+                                        <% if(x.path == 'name'){ %>
+                                        <p><%= x.message %></p>
+                                        <% } %>
+                                    <% } %>
+                                    <% } %>
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Enter the name" name="name"> 
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="inputEmail3" class="col col-form-label" id="your_name">Type:</label>
+                        <div class="col">
+                                <% if(messages.registration) { %>
+                                    <% for (var x of messages.registration) { %>
+                                        <% if(x.path == 'type'){ %>
+                                        <p><%= x.message %></p>
+                                        <% } %>
+                                    <% } %>
+                                    <% } %>
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Enter the type" name="type"> 
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="inputEmail3" class="col col-form-label" id="your_name">Age:</label>
+                        <div class="col">
+                                <% if(messages.registration) { %>
+                                    <% for (var x of messages.registration) { %>
+                                        <% if(x.path == 'age'){ %>
+                                        <p><%= x.message %></p>
+                                        <% } %>
+                                    <% } %>
+                                    <% } %>
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Enter the age" name="age"> 
+                        </div>
+                </div>
+                <div class="form-group row">
+                        <label for="inputEmail3" class="col col-form-label" id="your_name">Status:</label>
+                        <div class="col">
+                                <% if(messages.registration) { %>
+                                    <% for (var x of messages.registration) { %>
+                                        <% if(x.path == 'status'){ %>
+                                        <p><%= x.message %></p>
+                                        <% } %>
+                                    <% } %>
+                                    <% } %>
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Enter the status" name="status"> 
+                        </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Add this new mongoose!</button>
+                <a href="/" class="btn btn-primary">Go Back</a>
+                <% } %>
+            </form>
+        </div>
+    </body>
+  </html>
+

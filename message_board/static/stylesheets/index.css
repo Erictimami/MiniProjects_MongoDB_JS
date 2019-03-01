@@ -1,0 +1,161 @@
+*{
+    margin: center;
+}
+body{
+    margin: 0px auto;
+}
+
+.container{
+    margin: 0.2%!important;
+    width: 100%;
+    padding-top: 0.3%;
+    padding-left: 0px;
+    background-color: whitesmoke;
+}
+
+.header{
+    margin: 0px;
+    display: inline-block;
+    border: solid 1px;
+    width: 96%;
+    height: 60px;
+    background-color: rgba(134, 214, 214, 0.65);
+
+}
+.header h4{
+    margin: 0px;
+    display: inline-block;
+    vertical-align: bottom; 
+}
+.header h6{
+    margin: 0px;
+    display: inline-block;
+    margin-left: 200px;
+    vertical-align: bottom;
+    font-weight: bold;
+}
+.header a{
+    color: blue;
+    display: inline-block;
+    margin-left: 24%;
+    vertical-align: bottom;
+
+}
+.main_content{
+    
+    border: solid 1px;
+    width: 96%;
+    min-height: 60%;
+    padding: 1%;
+}
+
+h4{
+    width: 30%;
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.messages_user h6{
+    width: 30%;
+    height: 2%;
+    margin-left: 2%;
+    vertical-align: top;
+    font-weight: bold;
+}
+.sending_area h6{
+    width: 30%;
+    height: 2%;
+    margin-left: 2%;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+
+.messages_user{
+    vertical-align: top;
+    display: inline-block;
+    width: 42%;
+    border: solid 1px;
+    min-height: 400px;
+    margin-left: 0.1%;
+}
+
+.message_from{
+    display: inline-block;
+}
+img{
+    display: inline-block;
+    text-align: right;
+    height: 12px;
+    width: 12px;
+}
+.sending_area{
+    vertical-align: top;
+    display: inline-block;
+    width: 48%!important;
+    border: solid 1px;
+    min-height: 40%;
+    margin-left: 1%;
+    padding-left: 1.5%; 
+}
+
+form{
+    text-align: left;
+    width: 45%;
+    height: 60px;
+    vertical-align: top;
+    margin-left: 0px;
+}
+.textform{
+    display: inline-block;
+    width: 27%!important;
+    height: 90px;
+    vertical-align: top;
+    font-size: 12px!important;
+    
+}
+form label{
+    width: 4%;
+    color: red;
+    font-size: 12px;
+    margin-left: 0px;
+    width: 8%;
+    display: inline-block;
+    vertical-align: top;
+}
+#textform_id{
+    border: solid 2px;
+    font-size:12px !important;
+}
+textarea{
+    font-size: 12px!important;
+}
+p{
+    color: black;
+    font-size: 12px;
+    width: 38%;
+    margin-bottom: 0px;
+}
+span{
+    color: blue;
+    font-size: 12px;
+    width: 35%;
+    margin-left: 2%;
+    margin-top: 0px;
+}
+
+h5{
+    width: 30%;
+    margin-left: 0px;
+}
+
+#sub{
+    margin-left: 0px!important;
+    background-color: green;
+    margin-top: 7px!important;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+

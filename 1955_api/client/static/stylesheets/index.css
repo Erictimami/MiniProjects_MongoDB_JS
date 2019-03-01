@@ -1,0 +1,43 @@
+body{
+    margin: auto;
+    width: 1000px;
+    padding-left: 0px
+}
+
+form{
+    border: solid 2px;
+    width: 500px!important;
+    margin: 100px 0px 0px 250px;
+    padding: 10px 0px 0px 25px;
+    border-color: blue;
+    border-radius: 50px;
+}
+label{
+    width: 200px!important;
+}
+
+textarea{
+    width: 445px;
+}
+input{
+    width: 200px;
+}
+#inputEmail3{
+    width: 250px!important;
+    margin-right: 30px;
+}
+#your_name{
+    width: 300px!important;
+}
+button{
+    margin-right: 30px;
+}
+
+a{
+    margin-left: 60px;
+}
+P{
+    color: red;
+    font-size: 10px;
+    margin: 0px;
+}

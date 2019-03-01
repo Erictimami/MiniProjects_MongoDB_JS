@@ -1,0 +1,31 @@
+body{
+    margin: auto;
+    width: 1000px;
+    padding-left: 0px
+}
+.container{
+    border: solid 2px;
+    width: 700px!important;
+    margin: 100px 0px 0px 150px;
+    padding: 10px 0px 0px 25px;
+    border-color: blue;
+    border-radius: 50px;
+}
+
+.quotes{
+    color: #3d4c5b;
+    width: 500px;    
+    margin: 0px 0px 0px 30px;
+}
+p{
+    width: 200px;
+}
+.info{
+    width: 400px;
+    color: blue; 
+    margin-left: 80px;
+}
+h2{
+    text-align: center;
+}
+
